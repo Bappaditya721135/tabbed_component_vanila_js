@@ -94,6 +94,19 @@ body {
 .main-container {
     padding: 25px;
     background-color: #5400ff;
+    animation: fade-in 1s ease-in;
+    animation-delay: 1.2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .all-btn {
