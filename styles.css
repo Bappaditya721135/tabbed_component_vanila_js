@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    padding-top: 15%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* color  */
+.color {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 80%;
+    background-color: black;
+    border: 2px solid black;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.black-bg-color {
+    color: white;
+    background-color: #202020;
+    animation-name: delay;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes delay {
+    0% {
+        color: black;
+        background-color: white;
+    }
+
+    100% {
+        color: white;
+        background-color: #202020;
+    }
+}
+
+
+.color-btn {
+    width: 50%;
+    height: 100%;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.heading-text {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: sans-serif;
+    animation-name: drop-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: backwards;
+    color: red;
+    margin-bottom: 25px;
+}
+
+
+@keyframes drop-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    50% {
+        opacity: 0.5;
+        color: orangered;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.main-container {
+    padding: 25px;
+    background-color: #5400ff;
+}
+
+.all-btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    background-color: yellow;
+    color: black;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
+.active-content {
+    display: inline-block;
+}
+
+/* content container 
+ */
+.content-container {
+    width: 500px;
+    min-height: 200px;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
